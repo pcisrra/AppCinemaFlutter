@@ -14,7 +14,7 @@ abstract class MovieRepository {
 }
 
 class MovieRepositoryImpl implements MovieRepository {
-  var baseUrl = "http://api.themoviedb.org/3/";
+  var baseUrl = "https://api.themoviedb.org/3/";
   var key = api_key;
 
   @override

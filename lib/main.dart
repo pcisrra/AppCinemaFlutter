@@ -19,7 +19,7 @@ class SplashHandler extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "MOVIES.",
+      title: "CinemApp.",
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Movies",
+              "CinemApp",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 50,
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Row(
           children: <Widget>[
             Text(
-              "Movies",
+              "CinemApp",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: width * 0.08,
@@ -211,9 +211,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          tab(0, "In Threaters", "now_playing"),
-          tab(1, "Upcomings", "upcoming"),
-          tab(2, "Popular", "popular"),
+          tab(0, "Estrenos", "now_playing"),
+          tab(1, "Proximamente", "upcoming"),
+          tab(2, "Populares", "popular"),
         ],
       ),
     );

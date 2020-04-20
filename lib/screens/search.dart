@@ -50,7 +50,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       return Center(child: CircularProgressIndicator());
                     } else if (state is SearchMovieLoadedState) {
                       if (state.movies.length == 0) {
-                        return Center(child: Message("No hay resultados ! \n"));
+                        return Center(child: Message("No hay resultados!! \n"));
                       }
                       return Home(state.movies);
                     } else if (state is SearchMovieErrorState) {

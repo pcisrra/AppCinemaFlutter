@@ -121,7 +121,7 @@ class _DetailsState extends State<Details> {
                         genres(),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 10.0),
-                          child: Text("Storyline",
+                          child: Text("Sinopsis",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: "Poppins-Medium",
@@ -136,7 +136,7 @@ class _DetailsState extends State<Details> {
                                     MediaQuery.of(context).size.width * 0.038)),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0, bottom: 5),
-                          child: Text("Cast & Crue",
+                          child: Text("Actores",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: "Poppins-Medium",
@@ -160,7 +160,7 @@ class _DetailsState extends State<Details> {
                                   return CastScreen(state.casts);
                                 } else if (state is CastErrorState) {
                                   return Center(
-                                      child: Message("Feild to load !"));
+                                      child: Message("Error al cargar datos!!"));
                                 }
                               })),
                         )
