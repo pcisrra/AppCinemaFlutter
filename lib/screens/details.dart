@@ -262,6 +262,7 @@ class CastScreen extends StatelessWidget {
               )
             ],
           );
-        });
+        }
+      );
   }
 }
